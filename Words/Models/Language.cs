@@ -30,5 +30,10 @@ namespace words.Models
         {
             return $"{Title} : {getAverageLevel()}";
         }
+
+        public override bool Equals(object? obj)
+        {
+            return base.Equals(obj);
+        }
     }
 }
